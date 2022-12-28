@@ -6,27 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code Quiz</title>
   <link rel="stylesheet" href="./style.css">
-  <script defer src="./script.js"></script>
-  
 </head>
 
 <body>
-  <div>
+  <div id="container">
+    <div id="currentTime"></div>
+    <div id="questionArr">
+      <h1>Coding Quiz</h1>
+      <P>Answer 4 questions within 60 seconds</P>
+      <ul id="choiceArr"></ul>
+      <button id="startTime">Start quiz</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+  
 
-  </div>
-  <div class="container">
-    <div id="qustion container" class="hide">
-      <div id="question">Question</div>
-      <div id="answer-buttons" class="btn-grid">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
-      </div>
-  </div>
-  <div class="controls">
-    <button id="start-btn" class="start-btn btn">Start</button>
-    <button id="next-btn" class="next-btn btn hide">Next</button>
-  </div>
-  </div>
 </body>
+</html>
