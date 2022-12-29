@@ -73,7 +73,7 @@ function render(questionIndex){
 function compare(event) {
   var element = event.target;
 
-  if (element.maches("li")) {
+  if (element.matches("li")) {
     var createDiv = document.createElement("div");
     createDiv.setAttribute("id", "createDiv");
     
@@ -94,4 +94,19 @@ function compare(event) {
   }
   questionDiv.appendChild(createDiv);
 }
+
+function allDone() {
+questionArr.innerHTML = "";
+currentTime.innerHTML = "";
+}
+
+var createH1 = document.createElement("h1");
+createH1.setAttribute("id", "createH1");
+createH1.textContent = "All Done!";
+
+questionArr.appendChild(createH1);
+
+
+
+
 
