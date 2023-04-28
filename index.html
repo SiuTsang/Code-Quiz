@@ -1,25 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Quiz</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
+        <title> Code Quiz | OZ </title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
 
-<body>
-  <div id="container">
-    <div id="currentTime"></div>
-    <div id="questionArr">
-      <h1>Coding Quiz</h1>
-      <P>Answer 4 questions within 60 seconds</P>
-      <ul id="choiceArr"></ul>
-      <button id="startTime">Start quiz</button>
-    </div>
-  </div>
-  <script src="./script.js"></script>
-  
+    <body>
+        <div class="scores"> <a href="scores.html"> View Highscores </a></div>
 
-</body>
+        <div class="timer"> Time: <span id="time"> 0 </span></div>
+
+        <div class="container">
+            <div id="quiz-start" class="start">
+                <h1> Coding Quiz Challenge </h1>
+                <p>
+                    Are you ready for the Coding Quiz Challenge! Answer 4 questions as quickly as possible. 
+                    However, answer incorrectly will get punishment. 
+                     Click the 'Start Quiz' button to begin.
+                </p>
+                <button id="start"> Start Quiz </button>
+            </div>
+
+            <div id="questions" class="hide">
+                <h2 id="question-title"></h2>
+                <div id="answers" class="answers"></div>
+            </div>
+
+            <div id="quiz-end" class="hide">
+                <h2>All done!</h2>
+                <p>Your final score is <span id="final-score"></span>.</p>
+                <p>
+                    Enter initials: <input type="text" id="initials" max="3" />
+                    <button id="submit">Submit</button>
+                </p>
+            </div>
+
+            <div id="feedback" class="hide"></div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
 </html>
